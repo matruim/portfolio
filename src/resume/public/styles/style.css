@@ -1,0 +1,68 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #212121;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+h1{
+    font-size: 5em;
+    font-weight: 700;
+}
+hr{
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    width: 400px;
+}
+.navbar-inverse .navbar-brand{
+    color:white;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:white;
+}
+.navbar-inverse .navbar-nav>.active>a{
+    color:#9d9d9d;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background: #484848;
+}
+.fn{
+    border-bottom: 1px solid #f8f8f8;
+}
+.Section-Title{
+    border-right: 1px solid #f8f8f8
+}
+
+#content{
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+#email{
+    color:white;
+    text-decoration: none;
+}
+#bio{
+    padding-top: 5px;
+    text-indent: 5%;
+}
+.hobby h3{
+    text-align: center;
+
+}
+.hobby hr{
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    width: 100%;
+}
+a, a:hover,a:visited{
+    text-decoration: none;
+    color:#c4c4c4;
+}
+.profilepic{
+    max-width: 70%;
+}
