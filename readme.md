@@ -12,3 +12,8 @@ So creating this as a way to hold and expand on my protfolio of software that I 
 2. **Resume** - Nodejs / html
 
     Sample of my resume as a node project the current live version of my [resume is here.](http://jaredthomasgood.azurewebsites.net/resume.html)
+
+3. **Campsite** - Nodejs
+
+    This website will use a combination of node, express, ejs for the front end pages and passport for the authentication. The backend is a mongoose DB.
+
