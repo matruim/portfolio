@@ -1,0 +1,88 @@
+body {
+    background-color: #000; 
+  }
+  
+  #landing-header {
+    z-index: 1; /* the z-index to 1 so all of the elements inside the landing-header div will be in front of the background images */
+    position: relative; /* allows the z-index to work */
+    text-align: center;
+    padding-top: 40vh; /* vh is the view height */
+  }
+  
+  #landing-header h1 {
+    color: #fff;
+  }
+  
+  .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;  /* forces to orign in the vertical plane */
+    left: 0; /* forces to orign in the horizontal plane */
+    z-index: 0; /* moves it behind the header */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /*Setting up Slide SHOW*/
+  
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+  }
+  
+  /* Background images and delays for the animation */
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://www.nationalparks.org/sites/default/files/yosemite-merced.jpg) 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://www.nationalparks.org/sites/default/files/styles/wide_1x/public/shutterstock_142351951.jpg);
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg);
+    animation-delay: 20s; 
+  }
+  .slideshow li:nth-child(4) { 
+    background-image: url(https://www.tenayalodge.com/~/media/tenaya/images/cropped-photos/640-x-414-package-size/yosemite-valleyview-fall-ss-258887369.jpg);
+    animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(5) { 
+    background-image: url(http://www.travelyosemite.com/media/235725/bridalveil-fall-yosemite-waterfalls-517783519_1000x667.jpg);
+    animation-delay: 40s; 
+  }
+  
+  /* Fades animations in and out */
+  
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+  
+  /* Older browser support - .no-cssanimations class added by modernizr */
+  .no-cssanimations .slideshow li {
+      opacity: 1;
+  }
