@@ -63,15 +63,15 @@ SHOW    /campgrounds/:id    GET     Shows info about one campground
 * Add the comment new and create routes
 * Add the new comment form
 
-RESTFUL ROUTES Nesting
-|Name    |URL                |Verb   |Description|
-|-------_|:-----------------:|:-----:|------------|
-|INDEX   |/campgrounds       |GET    |Display a list of all campgrounds|
-|NEW     |/campgrounds/new   |GET    |Display Form to make a new campgrounds|
-|CREATE  |/campgrounds       |POST   |Add new campgrounds to Database|
-|SHOW    |/campgrounds/:id   |GET    |Shows info about one campground|
-|NEW     |/campgrounds/:id/comments/new    |GET     |Display Form to make a new campground comment|
-|CREATE  |/campgrounds/:id/comments        |POST    |Add new campground comment to Database|
+# RESTFUL ROUTES Nesting
+| Name    | URL               | Verb  | Description |
+| -------_|:-----------------:|:-----:|------------|
+| INDEX   | /campgrounds       | GET    | Display a list of all campgrounds |
+| NEW     | /campgrounds/new   | GET    | Display Form to make a new campgrounds |
+| CREATE  | /campgrounds       | POST   | Add new campgrounds to Database |
+| SHOW    | /campgrounds/:id   | GET    | Shows info about one campground |
+| NEW     | /campgrounds/:id/comments/new    | GET     |Display Form to make a new campground comment |
+| CREATE  | /campgrounds/:id/comments        | POST    |Add new campground comment to Database |
 
 ## Style Show Page
 * Add sidebar to show page
