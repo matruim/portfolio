@@ -37,13 +37,15 @@ Each Campground has:
 * Add a show route/template
 
 
-RESTFUL ROUTES
+# RESTFUL ROUTES
+
 Name    URL                 Verb    Description
-==================================================
+---
 INDEX   /campgrounds        GET     Display a list of all campgrounds
 NEW     /campgrounds/new    GET     Display Form to make a new campgrounds
 CREATE  /campgrounds        POST    Add new campgrounds to Database
 SHOW    /campgrounds/:id    GET     Shows info about one campground
+---
 
 ## Refactor Mongoose Code
 * Create a models directory
