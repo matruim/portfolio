@@ -70,6 +70,8 @@ public class NameGen {
 		//create 2 syllable names only for now
 		name += syllableOnly(prefixes.get(a));
 		
+		// make it capital
+		name = name.substring(0,1).toUpperCase() + name.substring(1);
 		int b = 0;
 		
 		do {
