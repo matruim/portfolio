@@ -15,5 +15,9 @@ So creating this as a way to hold and expand on my protfolio of software that I 
 
 3. **Campsite** - Nodejs
 
-    This website will use a combination of node, express, ejs for the front end pages and passport for the authentication. The backend is a mongoose DB.
+    This website will use a combination of node, express, ejs for the front end pages and passport for the authentication. 
+    The back-end is a mongodb.
 
+4. **Character Creator** - Java
+	
+	This program is a work in progress. The current program has the ability to do Dice Rolls and to randomly generate names.
