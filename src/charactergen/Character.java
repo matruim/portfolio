@@ -35,7 +35,12 @@ public class Character {
 		this(name);
 		this.setGender(gender);
 	}
-
+    public Character(String name, Gender gender, String race) {
+    	this();
+    	this.setGender(gender);
+    	this.setRace(race);
+    	this.setName(name);
+    }
 
 	private void setName(NAMETYPES type) {
 		try {
@@ -45,6 +50,7 @@ public class Character {
 		}
 		// If no name exit 
 		if(name.equals("")) {
+			System.out.println("No name found");
 			System.exit(1);
 		}
 	}
@@ -60,12 +66,20 @@ public class Character {
 		else if (isBetween(roll,61,80)) {
 			race = "Dwarf";
 			setName(NAMETYPES.FANTASY);
-			height = height-18;
+			this.height = 48 + DiceRoller.rollD12(1);
 		}
 		else {
 			race = "Elf";
 			setName(NAMETYPES.ELF);
-			weight = 120 +  DiceRoller.rollD10(6);
+			this.weight = 120 + DiceRoller.rollD10(6);
+		}
+	}
+	private void setRace(String race) {
+		this.race = race;
+		if(race.equals("Elf")) {
+			this.weight = 120 + DiceRoller.rollD10(6);
+		}else if (race.equals("Dwarf")) {
+			this.height = 48 + DiceRoller.rollD12(1);
 		}
 	}
 	private void setGender() {
@@ -149,10 +163,10 @@ public class Character {
 			landOfOrigin = "Old Kingdoms";
 	}
 	private void setBackground() {
-		
+		background = "";
 	}
 	private void setHostilities() {
-		
+		hostilities = "";
 	}
 	private void setDisposition() {
 		int roll = DiceRoller.rollPercentage();
